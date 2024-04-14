@@ -1,4 +1,4 @@
-const defaultCategories = ['Accounting', 'Computer and IT']
+const defaultCategories = ['Accounting', 'HR']; 
 
 const getCategories = () => {
   return defaultCategories;
