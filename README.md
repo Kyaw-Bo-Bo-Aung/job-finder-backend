@@ -63,4 +63,7 @@ cp .env.example .env
   2. (Optional) For API_KEY: register your app at [The Muse API](https://www.themuse.com/developers/api/v2)
   3. Update the PORT that your server to run at. (Default port is 3000)
 
-  
+
+## Tech Stack
+
+Node, Express
