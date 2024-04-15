@@ -6,14 +6,14 @@ const logger = require("../logger");
 
 const baseUrl = API_URL + "jobs";
 const firstPage = 0;
-const defaultCategories = getCategories();
+const defaultCategories = getCategories(); // getting the sample job category
 
 const getJobs = async (page = firstPage, category = defaultCategories, searchQuery) => {
   const response = await get(baseUrl, {
     params: { api_key: API_KEY ,page, category, ...searchQuery },
     paramsSerializer: (params) => {
       const queryParams = qs.stringify(params);
-      logger.info("requested url: " + baseUrl + queryParams);
+      logger.info("requested url: " + baseUrl + queryParams); // log the requested url from the client app
       return queryParams;
     }
   });
