@@ -12,3 +12,5 @@ app.listen(serverPort, () => {
   logger.info(`Listening on port ${serverPort}...`);
   console.log(`Listening on port ${serverPort}...`);
 });
+
+export default app;
